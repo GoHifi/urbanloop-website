@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Comforter&family=Gasoek+One&family=Oi&family=Sigmar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+.darksoul-navbar {
+  height: 60px;
+  z-index: 100;
+  display: flex;
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(225, 228, 233, 1) 0%,
+    rgba(244, 245, 247, 1) 35%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(225, 228, 233, 1) 0%,
+    rgba(244, 245, 247, 1) 35%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(225, 228, 233, 1) 0%,
+    rgba(244, 245, 247, 1) 35%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e1e4e9",endColorstr="#ffffff",GradientType=1);
+}
+.darksoul-navbar .brand {
+  margin: auto;
+  width: fit-content;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 0px;
+  display: flex;
+}
+.darksoul-navbar .brand h1 {
+  font-family: "Comforter", cursive;
+  margin: auto;
+  color: #000;
+}
+.darksoul-navbar ul {
+  width: 25%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+}
+.darksoul-navbar ul li {
+  margin: auto;
+  margin-left: 0px;
+  list-style: none;
+  font-weight: 400;
+}
+.rect {
+  margin: auto;
+  margin-left: 0px;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+}
+.darksoul-navbar ul li:hover .rect {
+  width: 100%;
+  transition: all 0.5s;
+}
+.darksoul-navbar ul li a {
+  font-family: "Poppins", sans-serif;
+  font-size: smaller;
+  text-decoration: none;
+  color: #000;
+}
+
+.darksoul-navbar .navbar-toggler {
+  margin: auto;
+  width: 50px;
+  height: 40%;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-right: 20px;
+}
+.darksoul-navbar .navbar-toggler .line1,
+.darksoul-navbar .navbar-toggler .line2 {
+  margin: auto;
+  width: 20px;
+  height: 1px;
+  background-color: #000;
+}
+.overlay-dropdown {
+  display: none;
+}
+.overlay-dropdown ul li {
+  display: none;
+}
+
+#intro-div,
+#about-div,
+#impact-div,
+#future-div,
+#contact-div {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#intro-div {
+  background-image: url("/assets/bg/contact-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#impact-div {
+  background-image: url("/assets/bg/impact-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#contact-div {
+  background-image: url("/assets/bg/contact-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#intro-div h2,
+#about-div h2,
+#impact-div h2,
+#contact-div h2,
+#future-div h2 {
+  margin: 15% auto 0 auto;
+  font-size: 4vw;
+  color: #000;
+}
+
+#contact-div h2 {
+  color: #2c9ced;
+}
+
+#contact-div h2 {
+  margin: 20% auto 0 auto;
+}
+
+#about-div h2,
+#impact-div h2,
+#future-div h2 {
+  margin: 6% auto 0 auto;
+}
+#about-div .inner-content {
+  margin: 3% 10% 5% 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#impact-div .inner-content {
+  margin: 0% 10% 5% 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#future-div .inner-content {
+  margin: 3% 10% 5% 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-div .hero-auto,
+#about-div .hero-flash-ride,
+#impact-div .hero-app,
+#impact-div .imapact-content {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#impact-div .imapact-content {
+  margin-top: 0%;
+  display: flex;
+  justify-content: center;
+}
+
+#about-div img {
+  width: 70%;
+}
+
+#impact-div img {
+  width: 32%;
+}
+
+#future-div .hero-loop img {
+  width: 40%;
+}
+
+#future-div .hero-hotspot img {
+  width: 50%;
+}
+
+#about-div .about-content {
+  text-align: center;
+  width: 60%;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#impact-div ul {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+}
+
+#impact-div ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+#impact-div ul li img.bullet {
+  width: 60px;
+  height: 60px;
+}
+
+#future-div .hero-loop,
+#future-div .hero-hotspot {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#future-div h4 {
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .darksoul-navbar ul {
+    display: none;
+  }
+  .darksoul-navbar .navbar-toggler {
+    display: flex;
+    margin-top: -40px;
+  }
+  .overlay-dropdown {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  .overlay-dropdown .brand {
+    margin: auto;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 12px;
+  }
+  .overlay-dropdown .brand h1 {
+    font-family: "Comforter", cursive;
+    margin: auto;
+  }
+  .overlay-dropdown ul {
+    width: 100%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: -20px;
+    margin-top: 160px;
+  }
+  .overlay-dropdown ul li {
+    display: flex;
+    list-style-type: none;
+    margin-left: 20px;
+  }
+  .overlay-dropdown ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 14px;
+  }
+
+  .darksoul-navbar {
+    display: block;
+  }
+
+  #intro-div,
+  #about-div,
+  #future-div,
+  #contact-div {
+    height: 96vh;
+  }
+
+  #intro-div {
+    background-attachment: scroll; /* Prevents fixed backgrounds from cutting off on mobile */
+    height: 100vh;
+  }
+
+  #intro-div h2 {
+    margin: 60% 0 15% 0;
+  }
+
+  #intro-div img {
+    width: 100%;
+  }
+
+  #about-div .inner-content {
+    display: flex;
+    flex-direction: column;
+
+    .hero-auto {
+      padding: 30px;
+    }
+
+    .hero-flash-ride {
+      padding: 30px;
+    }
+  }
+
+  #impact-div .inner-content {
+    flex-direction: column;
+  }
+
+  #about-div .hero-auto,
+  #about-div .hero-flash-ride,
+  #impact-div .hero-app,
+  #impact-div .imapact-content {
+    width: 85%;
+  }
+
+  #about-div .about-content {
+    width: 80%;
+  }
+
+  #impact-div {
+    height: 140vh;
+  }
+
+  #impact-div img {
+    width: 70%;
+  }
+
+  #future-div .inner-content {
+    flex-direction: column;
+  }
+  #future-div .hero-loop,
+  #future-div .hero-hotspot {
+    width: 80%;
+    padding-bottom: 30px;
+  }
+
+  #future-div .hero-loop img {
+    width: 60%;
+  }
+
+  #future-div .hero-hotspot img {
+    width: 90%;
+  }
+  #contact-div h2 {
+    margin: 76% auto 0 auto;
+    font-size: 10vw;
+  }
+}

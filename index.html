@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Loop</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="overlay-dropdown" id="overlay">
+      <ul>
+        <li>
+          <a href="#intro-div" onclick="navigation()">Home</a>
+        </li>
+        <li>
+          <a href="#about-div" onclick="navigation()">About</a>
+        </li>
+        <li>
+          <a href="#impact-div" onclick="navigation()">Impact</a>
+        </li>
+        <li>
+          <a href="#contact-div" onclick="navigation()">Reach Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="darksoul-navbar">
+      <div class="brand">
+        <img src="assets/logo.png" alt="logo" />
+      </div>
+      <ul>
+        <li>
+          <a href="#intro-div">Home</a>
+          <div class="rect"></div>
+        </li>
+        <li>
+          <a href="#about-div">About</a>
+          <div class="rect"></div>
+        </li>
+        <li>
+          <a href="#impact-div">Impact</a>
+          <div class="rect"></div>
+        </li>
+        <li>
+          <a href="#contact-div">Reach Us</a>
+          <div class="rect"></div>
+        </li>
+      </ul>
+      <div class="navbar-toggler" id="toggler" onclick="mobileNav()">
+        <div class="line1" id="ln1"></div>
+        <div class="line2" id="ln2"></div>
+      </div>
+    </div>
+    <div id="intro-div">
+      <h2>Reaching India's Next Billion Rides</h2>
+      <img src="assets/logo.png" alt="logo" />
+    </div>
+    <div id="about-div">
+      <h2>Get a ride in a minute</h2>
+      <div class="inner-content">
+        <div class="hero-auto">
+          <img src="assets/hero-auto.png" />
+        </div>
+        <div class="hero-flash-ride">
+          <img src="assets/hero-flash-ride.png" />
+        </div>
+      </div>
+      <div class="about-content">
+        <p>Building a QR-based solution that saves time, fuel and drivers growth enhancing platform efficiency.</p>
+        <br />
+        <p>Optimizing future propositions to create An integrated transit ecosystem that boosts ride-hail platforms with real-time lead generation, reduces cancellations, and optimizes driver-passenger matching. </p>
+      </div>
+    </div>
+    <div id="impact-div">
+      <h2>Ecosystem-wide Impact</h2>
+      <div class="inner-content">
+        <div class="imapact-content">
+          <ul>
+            <li>
+              <img src="/assets/icons/impact-save-fuel.png" alt="bullet" class="bullet">Reduces fuel consumption for drivers
+            </li>
+            <li>
+              <img src="/assets/icons/impact-flash-ride.png" alt="bullet" class="bullet">Enables flash rides
+            </li>
+            <li>
+              <img src="/assets/icons/impact-save-time.png" alt="bullet" class="bullet">Save time for both drivers and customers
+            </li>
+            <li>
+              <img src="/assets/icons/impact-increase.png" alt="bullet" class="bullet">Increases additional revenue
+            </li>
+            <li>
+              <img src="/assets/icons/impact-bargaining.png" alt="bullet" class="bullet">Eliminates Bargaining
+            </li>
+            <li>
+              <img src="/assets/icons/impact-reduce-cancel.png" alt="bullet" class="bullet">Reduces cancelled & Missed rides
+            </li>
+          </ul>
+        </div>
+        <div class="hero-app">
+          <img src="assets/hero-app.png" />
+        </div>
+      </div>
+    </div>
+    <div id="future-div">
+      <h2>Future propositions</h2>
+      <div class="inner-content">
+        <div class="hero-loop">
+          <img src="assets/hero-the-loop.png" />
+          <h4>"The Loop" Protocol: Enhancing Existing Aggregators with Urbanloop Integration <br /> The loop is a co-pilot for aggregators to boost revenue through data-driven smart workflows </h4>
+        </div>
+        <div class="hero-hotspot">
+          <img src="assets/hero-hotspot.jpeg" />
+          <h4>Setting up hotspots in high-traffic areas to serve as designated ride-hailing points.</h4>
+        </div>
+      </div>
+    </div>
+    <div id="contact-div">
+      <h2>Coming Soon!</h2>
+      <h4>Reach us on <a href="mailto:sai.urbanloop@gmail.com" target="_blank">sai.urbanloop@gmail.com</a>
+      </h4>
+    </div>
+    <script>
+      var toggler = document.getElementById("toggler");
+      var overlay = document.getElementById("overlay");
+      var ln1 = document.getElementById("ln1");
+      var ln2 = document.getElementById("ln2");
+      var toggleFlag = 0;
+      var intro = document.getElementById("intro-div");
+      var about = document.getElementById("about-div");
+      var impact = document.getElementById("impact-div");
+      var future = document.getElementById("future-div");
+      var contact = document.getElementById("contact-div");
+
+      function mobileNav() {
+        if (toggleFlag == 0) {
+          overlay.style.display = "flex";
+          ln1.style.transform = "rotate(50deg)";
+          ln2.style.transform = "rotate(-50deg)";
+          toggler.style.height = "1px";
+          toggler.style.marginTop = "-30px";
+          toggleFlag = 1;
+        } else {
+          overlay.style.display = "none";
+          ln1.style.transform = "rotate(0deg)";
+          ln2.style.transform = "rotate(0deg)";
+          toggler.style.height = "40%";
+          toggler.style.marginTop = "-40px";
+          toggleFlag = 0;
+        }
+      }
+
+      function navigation() {
+        overlay.style.display = "none";
+        ln1.style.transform = "rotate(0deg)";
+        ln2.style.transform = "rotate(0deg)";
+        toggler.style.height = "40%";
+        intro.style.display = "flex";
+        about.style.display = "flex";
+        services.style.display = "flex";
+        careers.style.display = "flex";
+        contact.style.display = "flex";
+        toggleFlag = 0;
+      }
+    </script>
+  </body>
+</html>
